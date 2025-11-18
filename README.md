@@ -140,6 +140,7 @@ Los diagramas incluidos representan:
 - DiagramaDeSecuencia.png
 - DiagramaDominio.jpg
 - Mejora de relaciones en las bases de datos para microservicios.jpg
+- DeploymentDiagram.jpg
 
 ---
 
@@ -157,3 +158,4 @@ Centralizar toda la documentación técnica de AutoYa para permitir:
 - **Frontend AutoYa**: https://github.com/AlvaroV19/AutoYa-Frontend
 - **Backend AutoYa**: https://github.com/AlvaroV19/AutoYa-Backend
 - **Deployment AutoYa**: https://github.com/AlvaroV19/AutoYa-Deployment
+- **Repository Legacy**: https://github.com/beyner62838/AutoYa
