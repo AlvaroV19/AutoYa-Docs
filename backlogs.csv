@@ -1,0 +1,31 @@
+Issue Type,Summary,Description,Epic Link,Story Points,Components,Labels
+Epic,EP-01 Autenticación & Usuarios,,,,
+Epic,EP-02 Vehículos (propietario),,,,,
+Epic,EP-03 Disponibilidad & Calendario,,,,
+Epic,EP-04 Reservas (HOLD/confirm/cancel),,,,,
+Epic,EP-05 Pagos (mock) & Facturas,,,,
+Epic,EP-06 Búsqueda & Geo,,,,
+Epic,EP-07 Notificaciones & Reseñas,,,,
+Epic,EP-08 Observabilidad & Seguridad,,,,
+Epic,EP-09 Frontend Web (PWA),,,,,
+Epic,EP-10 Infra/DevOps (Docker, CI/CD),,,,,
+Story,Registro de usuario (email/clave),"Como usuario quiero crear una cuenta para acceder",EP-01,3,backend;frontend,auth
+Story,Login con JWT y roles,"Como usuario quiero iniciar sesión para usar mi rol CLIENTE/PROPIETARIO",EP-01,3,backend;frontend,auth
+Story,Crear vehículo (sin fotos),"Como propietario quiero crear un vehículo con datos básicos",EP-02,3,backend;frontend,vehicles
+Story,Subir fotos del vehículo a MinIO,"Como propietario quiero subir imágenes del vehículo",EP-02,5,backend;frontend,storage
+Story,Calendario de disponibilidad,"Como propietario quiero bloquear fechas y definir precios",EP-03,5,backend;frontend,calendar
+Story,Ver disponibilidad,"Como cliente quiero ver disponibilidad por rango de fechas",EP-03,3,backend;frontend,calendar
+Story,Crear HOLD de reserva (10 min),"Como cliente quiero bloquear un vehículo para evitar doble reserva",EP-04,5,backend,reservas
+Story,Confirmar reserva tras pago mock,"Como cliente quiero confirmar una reserva al pagar",EP-04,3,backend;frontend,reservas
+Story,Cancelar reserva,"Como cliente quiero cancelar con política",EP-04,3,backend;frontend,reservas
+Story,Intent/Capture de pago (mock),"Como sistema quiero simular intent y capture de pago",EP-05,5,backend,pagos
+Story,Recibo simple (PDF/HTML),"Como cliente quiero ver un recibo de mi reserva",EP-05,3,backend;frontend,pagos
+Story,Búsqueda por ciudad/fechas/filtros,"Como cliente quiero buscar vehículos relevantes",EP-06,5,backend;frontend,search
+Story,Ordenar por precio/valoración,"Como cliente quiero ordenar resultados",EP-06,3,backend;frontend,search
+Story,Email de confirmación,"Como cliente quiero recibir confirmación por email",EP-07,3,backend,notifs
+Story,Reseñar vehículo/propietario,"Como cliente quiero dejar reseña tras el viaje",EP-07,3,backend;frontend,reviews
+Story,Métricas /actuator/prometheus,"Como devops quiero ver métricas",EP-08,3,backend,observability
+Story,Tracing OpenTelemetry,"Como devops quiero trazar flujos de reserva/pago",EP-08,5,backend,observability
+Story,Catálogo/Detalle/Checkout UI,"Como usuario quiero navegar y reservar desde la web",EP-09,8,frontend,ui
+Story,Docker Compose dev (db, minio, redis),"Como dev quiero levantar entorno local rápido",EP-10,5,devops,infra
+Story,CI básico (build/test PR),"Como equipo quiero validar PRs con acciones automáticas",EP-10,3,devops,ci
