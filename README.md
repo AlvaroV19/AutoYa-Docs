@@ -150,3 +150,10 @@ Centralizar toda la documentación técnica de AutoYa para permitir:
 - Establecer una arquitectura clara y coherente.
 - Mantener una referencia única del modelo de datos y procesos.
 - Guiar implementaciones futuras basadas en DDD, CQRS y eventos.
+
+---
+
+## Enlaces del proyecto
+- **Frontend AutoYa**: https://github.com/AlvaroV19/AutoYa-Frontend
+- **Backend AutoYa**: https://github.com/AlvaroV19/AutoYa-Backend
+- **Deployment AutoYa**: https://github.com/AlvaroV19/AutoYa-Deployment
